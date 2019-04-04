@@ -289,6 +289,6 @@ class SendgridV3Transport extends Transport
      */
     private function post($payload)
     {
-        return $this->client->post('https://api.sendgrid.com/v3/mail/send', $payload);
+        return $this->client->post(env('SENDGRID_API_BASE_URI', self::BASE_URL), $payload);
     }
 }
