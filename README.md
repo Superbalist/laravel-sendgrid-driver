@@ -74,6 +74,7 @@ return [
 ```
 MAIL_DRIVER=sendgrid
 SENDGRID_API_KEY='YOUR_SENDGRID_API_KEY'
+SENDGRID_API_BASE_URI='OPTIONALLY_OVERRIDE_BASE_URI'
 ```
 
 config/services.php (In using lumen, require creating config directory and file.)
